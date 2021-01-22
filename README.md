@@ -2,6 +2,10 @@
 A starter template for running Terraform and Checkov in Azure
 
 # How to run the example
+Install Checkov with:
+```shell
+$ pip install checkov
+```
 On the `example_storage_account/src` folder, create the tfplan with the input variable `environment` set to `dev`:
 ```shell
 $ terraform init && terraform plan --var environment=dev --out terraform.tfplan.binary
